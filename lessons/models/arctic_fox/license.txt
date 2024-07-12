@@ -1,0 +1,11 @@
+Model Information:
+* title:	Arctic Fox - 3December
+* source:	https://sketchfab.com/3d-models/arctic-fox-3december-3d702d2b35ba4eb4b4f20a2b3e65378b
+* author:	zhixson (https://sketchfab.com/zhixson)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Arctic Fox - 3December" (https://sketchfab.com/3d-models/arctic-fox-3december-3d702d2b35ba4eb4b4f20a2b3e65378b) by zhixson (https://sketchfab.com/zhixson) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

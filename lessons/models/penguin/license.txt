@@ -1,0 +1,11 @@
+Model Information:
+* title:	Little Blue Penguin / Kororā
+* source:	https://sketchfab.com/3d-models/little-blue-penguin-korora-8a58020139cf43bc821bfdfa01e13208
+* author:	Auckland Museum (https://sketchfab.com/aucklandmuseum)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Little Blue Penguin / Kororā" (https://sketchfab.com/3d-models/little-blue-penguin-korora-8a58020139cf43bc821bfdfa01e13208) by Auckland Museum (https://sketchfab.com/aucklandmuseum) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

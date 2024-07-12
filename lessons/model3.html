@@ -1,0 +1,127 @@
+<!--
+  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
+  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple Three.JS App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/point.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+
+    <main>
+      <div id="container3D"></div>
+    </main>
+
+    <section>
+      <div class="container">
+        <div class="all-tooltip">
+
+          
+          <div class=" tooltip tooltip-1">
+            <div class="pin"></div>
+            <div class="tooltip-content">
+              <div class="arrow"></div>
+              <div class="content">
+                <h1> 
+                  الدب البني 
+                </h1>
+                <p>
+                  يعيش في الغابات.
+                  يمتلك فراء داكنة اللون،
+                  تساعده على التخفي بين الأشجار أثناء الصيد.                  
+                </p>                
+                <button onClick="javascript:window.open('https://www.youtube.com/watch?v=5DdiEhDmzc4', '_blank');">اضغط لمشاهدة الفيديو</button>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          <div class="tooltip tooltip-2">
+            <div class="pin"></div>
+            <div class="tooltip-content">
+              <div class="arrow"></div>
+              <div class="content">
+                <h1>أقدام البطريق</h1>
+                <p>
+                    
+                </p>  
+   <button onClick="javascript:window.open('https://www.youtube.com/watch?v=Ks346CA37gA', '_blank');">اضغط لمشاهدة الفيديو</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tooltip tooltip-3">
+            <div class="pin"></div>
+            <div class="tooltip-content">
+              <div class="arrow"></div>
+              <div class="content">
+                <h1>الأوعية الدموية</h1>
+                <p>الأوعية الدموية  تلتف حول بعضها وتتلامس لتنتقل الحرارة من الدم الدافئ إلى الدم البارد : مما يحافظ على أقدام البطريق من التجمد.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tooltip tooltip-4">
+            <div class="pin"></div>
+            <div class="tooltip-content">
+              <div class="arrow"></div>
+              <div class="content">
+                <h1>كيف تساعد أقدام البطاريق في بقائها على قيد الحياة في المناخ البارد ؟</h1>
+                <p>تلتف الأوعية الدموية التي تحمل الدم الدافئ القادم من جسم البطريق حولالأوعية الدموية التي تحمل الدم البارد في قدميه : مما يؤدي إلى انتقال الحرارة إلى القدمين وحفظهما من التجمد.
+                </p>
+              </div>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </section>
+
+
+    <nav>
+      <ul>
+        <li> <button onClick="javascript:window.open('model1.html', '_self');">البطريق</button></li>
+        <li> <button onClick="javascript:window.open('model2.html', '_self');">الدب القطبي</button></li>
+        <li> <button onClick="javascript:window.open('model3.html', '_self');">الدب البني</button></li>
+        <li> <button onClick="javascript:window.open('model4.html', '_self');">ثعلب الفنك </button></li>
+        <li> <button onClick="javascript:window.open('model5.html', '_self');">الثعلب القطبي </button></li>
+        <li> <button onClick="javascript:window.open('model6.html', '_self');">قرش الثور </button></li>
+        <li> <button onClick="javascript:window.open('model7.html', '_self');">حرباء النمر </button></li>
+        <li> <button onClick="javascript:window.open('activity.html', '_self');"> الممارسة </button></li>
+
+        </li>
+        </ul>
+        <div class="icon"></div>
+        <div class="back"></div>
+
+    </nav>
+  
+    <script type="module" src="js/main3.js"></script>
+    <script src="js/point.js"></script>
+
+
+    <script>
+      const btnback = document.querySelector('.back');
+      btnback.addEventListener('click', () => {
+          window.open('index.html', '_self');
+                                            })
+    </script>
+  <script>
+    const icon = document.querySelector('.icon');
+    const nav = document.querySelector('nav');
+    
+    icon.addEventListener('click', () => {
+      icon.classList.toggle('close');
+      nav.classList.toggle('show');
+    })
+    </script>
+
+
+  </body>
+</html>
