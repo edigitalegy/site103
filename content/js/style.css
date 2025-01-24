@@ -1,0 +1,427 @@
+@charset "utf-8";
+*
+{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	font-family:sans-serif;
+	font-weight: normal;
+	direction: ltr;
+}
+
+body
+{
+	background-color: #d4ebff;
+	background-image:url(bg.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	direction: rtl;	
+	text-align: justify;
+}
+.heading
+{
+	direction: rtl;
+	background:rgba(246, 251, 253, 0.8);
+	color:rgb(119, 112, 103);
+	font-size: 30px;
+	text-align: right;
+	text-indent: .5cm;
+	padding-bottom: 5px;
+}
+/***********************************************container***********************************************************************/
+.container
+{
+	display: grid;
+	grid-template-columns:  1fr;
+	gap: 10px;
+    align-items: center;
+	justify-items: center;
+}
+/***********************************************menu-list***********************************************************************/
+.container .menu-list
+{
+	position:fixed;
+	top: 10px;
+	left: 5px;
+	background:rgb(255, 255, 255,.9);
+	height: 95vh;
+	overflow-y: scroll;	
+	border-radius: 8px;
+	opacity: 1;
+	transform: translateX(-100%);
+	transition: .5s ease;
+	z-index:1;
+}
+.container .menu-list button 
+{
+	display: flex;
+	gap: 10px;
+	align-items:center;
+	background: #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid rgba(0, 0, 0,0.1);
+	cursor: pointer;
+	direction: rtl;
+	font-size:larger;
+}
+.container .menu-list button 
+{
+	width: 200px;
+	border-radius: 5px;
+}
+.container .menu-list::-webkit-scrollbar
+{
+	width: 15px;
+}
+
+.container .menu-list::-webkit-scrollbar-track
+{
+	background: #ccc;
+	border-radius: 50px;
+}
+.container .menu-list::-webkit-scrollbar-thumb
+{
+	background: #666;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.container .menu-list button:hover
+{
+	background: #fff;
+}
+
+.container .menu-list button.active
+{
+	background: #8dc2ff;
+}
+
+/***********************************************video-list***********************************************************************/
+.container .video-list
+{
+	position:fixed;
+	top: 10px;
+	right: 5px;
+	background:rgb(255, 255, 255,.9);
+	height: 95vh;
+	overflow-y: scroll;	
+	border-radius: 8px;
+	opacity: 1;
+	transform: translateX(100%);
+	transition: .5s ease;
+	direction: rtl;
+	z-index:1;
+}
+.container .video-list .vid,.container .video-list .vid-btn
+{
+	display: flex;
+	gap: 2px;
+	align-items:center;
+	background: #ccc;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid rgba(0, 0, 0,0.1);
+	cursor: pointer;
+	direction: rtl;
+}
+.container .video-list .vid video
+{
+	width: 100px;
+	border-radius: 5px;
+}
+
+.container .video-list::-webkit-scrollbar
+{
+	width: 15px;
+}
+
+.container .video-list::-webkit-scrollbar-track
+{
+	background: #ccc;
+	border-radius: 50px;
+}
+.container .video-list::-webkit-scrollbar-thumb
+{
+	background: #666;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.container .video-list .vid:hover
+{
+	background: #fff;
+}
+
+.container .video-list .vid.active
+{
+	background: #8dc2ff;
+}
+
+.container .video-list .vid.active .title
+{
+	color: #fff;
+}
+
+.container .video-list .vid .title
+{
+	color: #000;
+	font-size: larger;
+	margin: 5px;
+}
+/***********************************************btn-list***********************************************************************/
+.img-btn
+{
+	height: 60px;
+	width: 60px;
+}
+
+.container .video-list .vid-btn button
+  {
+	padding: 15px ;
+	background-color: #ccc;
+	color:rgb(0, 0, 0);
+	border: none;
+	outline: none;
+	font-size:x-large;
+	cursor: pointer;
+	width: 100%;
+  }
+  .container .video-list .vid-btn button:hover
+  {
+	background: #ffffff;
+  }
+  .container .video-list .vid-btn button.playing {
+	background-color: #8dc2ff;
+	color: white;
+	box-shadow: 0px 2px 15px #dfdfdf;
+	font-weight: bold;
+}
+
+/***********************************************video main***********************************************************************/
+.container .main-video
+{
+	padding-top: 5px;
+}
+.container .main-video video
+{
+	width: auto;
+	height: 88vh;
+	border-radius: 5px;
+}
+
+.container .main-video .title
+{
+	color:rgb(0, 0, 0);
+	font-size:30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background:rgb(255, 255, 255,.2);
+	text-align: center;
+}
+/**********************************************buttons user************************************************************/
+  .user{
+	position: fixed;
+	top: 10px;
+	left: 5px;
+	outline: none;
+	border: none;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-image: url(user.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	z-index:2;
+  }
+  .menu{
+	position: fixed;
+	top: 10px;
+	right: 5px;
+	outline: none;
+	border: none;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-image: url(menu.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	z-index:2;
+  }
+
+  .back{
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+	outline: none;
+	border: none;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-image: url(back1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+  }
+
+  .chatai{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	outline: none;
+	border: none;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-image: url(user.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+  }
+
+/**********************************************show-hide************************************************************/
+.user.close{
+	transform:translatex(0%) rotate(360deg);
+	transition: 0.5s ease;
+	background-image: url(close.png);
+	z-index:2;
+  }
+
+.menu.close{
+	transform:translatex(0%) rotate(360deg);
+	transition: 0.5s ease;
+	background-image: url(close.png);
+	z-index:2;
+  }
+
+.container .video-list.show
+  {
+	opacity: 1;
+	transform: translate(0%);
+	z-index:1;
+  }
+
+  .container .menu-list.show {
+	transform: translate(0%);
+	opacity: 1;
+	z-index:1;
+  }
+
+  /**********************************************elements************************************************************/
+  .chat,.pretest,.posttest,.ovid1,.act1 ,.act2 ,.act3,.act4,.act5,.act6,.act7,.act8 {
+	width: 100%;
+	position: fixed;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:rgb(255, 255, 255,.97);
+	transform: translateX(100%);
+  }
+  .chat.show,.pretest.show,.posttest.show,.ovid1.show,.act1.show,.act2.show ,.act3.show ,.act4.show ,.act5.show ,.act6.show ,.act7.show ,.act8.show {
+	transform: translate(0%);
+	opacity: 1;
+  }
+  .hidden {
+	width: 100%;
+	position: fixed;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:rgb(255, 255, 255,.97);
+	transform: translateX(100%);  
+}
+/***********************************************mobile***********************************************************************/
+@media (max-width: 991px) 
+{
+	.container
+	{
+		grid-template-columns: 1fr;
+		padding: 10px;
+	}
+
+	.container .main-video video
+	{
+		width: 100%;
+		height: 75vh;
+		border-radius: 5px;
+	}
+
+	.user, .menu, .back, .chatai
+	{
+		width: 50px;
+		height: 50px;
+	}
+
+	.ovid1 iframe 
+	{
+		width: 100%;
+		height: 90vh;
+	}
+}
+
+@media (max-width: 768px) 
+{
+	.container
+	{
+		grid-template-columns: 1fr;
+	}
+
+	.container .main-video video
+	{
+		width: 100%;
+		height: 75vh;
+		border-radius: 5px;
+	}
+	.ovid1 iframe 
+	{
+		width: 100%;
+		height: 90vh;
+
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	body
+	{
+		font-size: small;
+	}
+}
+
+
+
