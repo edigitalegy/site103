@@ -45,7 +45,7 @@ window.onload = function() {
   
         var title = document.createElement('h1')
         title.setAttribute('id', 'title')
-        title.textContent = 'المستجدات العالمية'
+        title.textContent = 'مناقشة'
   
         title_inner_container.append(title)
         title_container.append(title_inner_container)
